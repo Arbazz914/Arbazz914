@@ -1,0 +1,14 @@
+wget https://get.jenkins.io/war-stable/2.303.3/jenkins.war
+java -jar jenkins.war > /dev/null 2>&1 &
+
+mvn
+sudo yum remove maven -y
+Wget https://mirrors.estointernet.in/apache/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.tar.gz
+sudo tar xf apache-maven-*.tar.gz -C /opt
+sudo ln -s /opt/apache-maven-3. /opt/maven
+
+docker
+sudo amazon-extras install docker -y
+create credential
+
+sudo chmod 777 /var/run/docker.sock
