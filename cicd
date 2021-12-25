@@ -8,7 +8,7 @@ sudo tar xf apache-maven-*.tar.gz -C /opt
 sudo ln -s /opt/apache-maven-3.8.4 /opt/maven
 
 docker
-sudo amazon-extras install docker -y
+sudo amazon-linux-extras install docker y-y
 crete credentials as secret text type
 1. dockerpwd  :  Copy docker hub pwd
 2. dpeloymentserverpwd: any password
