@@ -9,6 +9,8 @@ sudo ln -s /opt/apache-maven-3.8.4 /opt/maven
 
 docker
 sudo amazon-extras install docker -y
-create credential
+crete credentials as secret text type
+1. dockerpwd  :  Copy docker hub pwd
+2. dpeloymentserverpwd: any password
 
 sudo chmod 777 /var/run/docker.sock
