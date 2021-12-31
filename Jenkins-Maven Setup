@@ -12,6 +12,13 @@ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenk
 sudo rpm --import http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key
 sudo yum install jenkins -y
 
+if you get this error Error: Package: jenkins-2.303.2-1.1.noarch (jenkins)
+Requires: daemonize
+sudo amazon-linux-extras install epel -y
+sudo yum install daemonize
+sudo yum install jenkins -y
+
+
 =============================================================
 maven setup
 =============================================================
