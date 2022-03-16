@@ -25,7 +25,18 @@ maven setup
 sudo yum remove maven -y
 wget https://mirrors.estointernet.in/apache/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.tar.gz
 sudo tar xf apache-maven-*.tar.gz -C /opt
-sudo ln -s /opt/apache-maven-3.8.4 /opt/maven
+sudo ln -s /opt/apache-maven-3.8.5 /opt/maven
+/opt/maven/bin/mvn archetype:generate -DgroupId=test.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+git init
+git add .
+git commit 
+create repo and add it and then git push
+create new job and add the repo then execute these commands
+/opt/maven/bin/mvn clean
+/opt/maven/bin/mvn compiler:compile
+/opt/maven/bin/mvn verify
+aws s3 cp $WORKSPACE/target/*.jar s3://lab2-s3bucket89/
+
 
 ==============================================================
 docker
