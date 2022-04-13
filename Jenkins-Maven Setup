@@ -5,7 +5,10 @@ sudo amazon-linux-extras install java-openjdk11
 wget https://get.jenkins.io/war-stable/2.303.3/jenkins.war
 java -jar jenkins.war > /dev/null 2>&1 &
 
-Or to install jenkins as a service use these steps
+Or
+================================================
+install jenkins as a service use these steps
+================================================
 ssh to the instance and run sudo yum update -y command
 sudo amazon-linux-extras install java-openjdk11
 sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins.io/redhat/jenkins.repo
